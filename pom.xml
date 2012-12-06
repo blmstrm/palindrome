@@ -15,11 +15,11 @@
         <artifactId>maven-javadoc-plugin</artifactId>
         <version>2.9</version>
         <configuration>
-          <doctitle>API for ${project.name} ${project.version}</doctitle> <!-- Used by javadoc:javadoc goal -->
-          <windowtitle>API for ${project.name} ${project.version}</windowtitle> <!-- Used by javadoc:javadoc goal -->
+          <doctitle>API for ${project.name} ${project.version}</doctitle>
+          <windowtitle>API for ${project.name} ${project.version}</windowtitle>
 
-          <testDoctitle>Test API for ${project.name} ${project.version}</testDoctitle> <!-- Used by javadoc:test-javadoc goal -->
-          <testWindowtitle>Test API for ${project.name} ${project.version}</testWindowtitle> <!-- Used by javadoc:test-javadoc goal -->
+          <testDoctitle>Test API for ${project.name} ${project.version}</testDoctitle>
+          <testWindowtitle>Test API for ${project.name} ${project.version}</testWindowtitle>
   
         </configuration>
       </plugin>
