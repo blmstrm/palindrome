@@ -1,0 +1,62 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+   <build>
+   <plugins>
+       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.0</version>
+        <configuration>
+          <source>1.7</source>
+          <target>1.7</target>
+        </configuration>
+      </plugin>
+       <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-javadoc-plugin</artifactId>
+        <version>2.9</version>
+        <configuration>
+          <doctitle>API for ${project.name} ${project.version}</doctitle> <!-- Used by javadoc:javadoc goal -->
+          <windowtitle>API for ${project.name} ${project.version}</windowtitle> <!-- Used by javadoc:javadoc goal -->
+
+          <testDoctitle>Test API for ${project.name} ${project.version}</testDoctitle> <!-- Used by javadoc:test-javadoc goal -->
+          <testWindowtitle>Test API for ${project.name} ${project.version}</testWindowtitle> <!-- Used by javadoc:test-javadoc goal -->
+  
+        </configuration>
+      </plugin>
+        <plugin>
+            <groupId>org.apache.maven.plugins</groupId>
+    <artifactId>maven-jar-plugin</artifactId>
+             <version>2.4</version>
+    <configuration>
+    <archive>
+      <manifest>
+      <addClasspath>true</addClasspath>
+      <classpathPrefix>lib/</classpathPrefix>
+          <mainClass>com.blmstrm.palindrome.Main</mainClass>
+      </manifest>
+    </archive>
+     </configuration>
+        </plugin>
+     </plugins>
+     </build>
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>com.blmstrm.test</groupId>
+  <artifactId>Palindrome</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <name>Palindrome</name>
+  <description>Find biggest palindrome in product of factors of size n</description>
+   <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+ 
+<dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.8.1</version>
+      <scope>test</scope>
+    </dependency>
+    
+ </dependencies>
+ 
+</project>
