@@ -10,7 +10,8 @@ import com.blmstrm.palindrome.*;
 public class TestSafeOperations {
 
 	/**
-	 * A test method to verify that the LongOverflowException is thrown when the product of the values of the two integers fed to the safePow() method would cause an overflow. 
+	 * A test method to verify that the LongOverflowException is thrown when the product of the values of the two
+	 * integers fed to the safePow() method would cause an overflow. 
 	 * @throws LongOverflowException
 	 */
 	

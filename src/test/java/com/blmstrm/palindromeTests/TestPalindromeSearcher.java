@@ -23,7 +23,8 @@ public class TestPalindromeSearcher {
 	}
 	
 	/**
-	 * A test method to verify that the class correctly ignores a zero as the length of the factors making up a possible palindrome.
+	 * A test method to verify that the class correctly ignores a zero as the length of the factors
+	 * making up a possible palindrome.
 	 */
 	@Test
 	public void zeroDigitPalindrome(){
