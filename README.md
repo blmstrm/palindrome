@@ -7,7 +7,7 @@ For source code javadoc see:
 
 http://www.blmstrm.com/palindrome/apidocs/index.html
 
-and for unit test javadoc:
+and for unit test javadoc see:
 
 http://www.blmstrm.com/palindrome/testapidocs/index.html
 
