@@ -25,10 +25,14 @@ public final class SafeOperations{
 		return returnAnswer;
 	}
 
-	/*
-	 * Enables safe multiplication needed in safePow() above.
+	/**
+	 * Method that performs multiplication of long a and long bm and throws and exception if the result would overflow
+	 * @param a - long factor.
+	 * @param b - long factor.
+	 * @return - Returns the result of the multiplication operation.
+	 * @throws LongOverflowException
 	 */
-	private static long safeMultiplication(long a, long b) throws LongOverflowException{
+	public static long safeMultiplication(long a, long b) throws LongOverflowException{
 		if(a <= Long.MAX_VALUE/b || b <= Long.MAX_VALUE/a){
 			return a*b;
 		}else{

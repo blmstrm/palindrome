@@ -36,6 +36,7 @@ public class PalindromeSearcher {
 
 		long lengthA = 0L;
 		long lengthB = 0L;
+		long biggestNumber = 0L;
 
 		if(nDigits > 0){
 			this.numberOfDigits = (long)nDigits;
@@ -48,9 +49,16 @@ public class PalindromeSearcher {
 				System.exit(0);
 			}
 
-
+			try {
+				biggestNumber = (long)SafeOperations.safeMultiplication(maximumValue, maximumValue);
+			} catch (LongOverflowException e) {
+				System.err.println(e);
+				System.exit(0);
+			}
+			
+			
 			outerLoop:
-				for(currentValue = this.maximumValue*this.maximumValue;currentValue >=this.minimumValue; currentValue--){
+				for(currentValue = biggestNumber;currentValue >=this.minimumValue; currentValue--){
 
 					if(palindromeVerifier.isLongPalindrome(currentValue)){
 
