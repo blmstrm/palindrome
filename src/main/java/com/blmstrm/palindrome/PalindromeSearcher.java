@@ -44,19 +44,12 @@ public class PalindromeSearcher {
 			try {
 				this.maximumValue = (long)SafeOperations.safePow(10, nDigits)-1;
 				this.minimumValue = (long) SafeOperations.safePow(10, nDigits-1);
-			} catch (LongOverflowException e) {
-				System.err.println(e);
-				System.exit(0);
-			}
-
-			try {
 				biggestNumber = (long)SafeOperations.safeMultiplication(maximumValue, maximumValue);
 			} catch (LongOverflowException e) {
 				System.err.println(e);
 				System.exit(0);
 			}
-			
-			
+
 			outerLoop:
 				for(currentValue = biggestNumber;currentValue >=this.minimumValue; currentValue--){
 

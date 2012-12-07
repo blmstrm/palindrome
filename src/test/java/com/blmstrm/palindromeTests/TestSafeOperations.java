@@ -17,7 +17,7 @@ public class TestSafeOperations {
 	
 	@Test(expected=LongOverflowException.class)
 	public void catchOverflowingLong() throws LongOverflowException{
-		SafeOperations.safePow(999,999);
+		SafeOperations.safeMultiplication(99999999999999L,99999999999999L);
 	}
 
 
