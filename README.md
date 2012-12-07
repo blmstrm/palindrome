@@ -7,7 +7,7 @@ For source code javadoc see:
 
 http://www.blmstrm.com/palindrome/apidocs/index.html
 
-and for unit test javadoc:
+and for unit test javadoc see:
 
 http://www.blmstrm.com/palindrome/testapidocs/index.html
 
@@ -15,7 +15,7 @@ To compile & install the project, while in the root directory where the `pom.xml
 
 `mvn install`
 
-The jar file obtained if executed will calculate and display the biggest palindrome being a product of two 3-digit numbers.
+The jar file obtained, if executed will calculate and display the biggest palindrome being a product of two 3-digit numbers.
 
 The method `findPalindrome(long nDigits)` can take any valid `long` as input and will compute the biggest palindrome as a product of two factors with `nDigits` digits.
 
